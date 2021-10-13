@@ -1,7 +1,7 @@
 ## Run test code :-
   - Run the test code with the below command :-
   ```
-  # /usr/bin/vnn-cooking_state_recognition-test --video <input-video-file> --done_time <time(minutes)> --overdone_time <time(minutes)>  --result <output-file>
+   /usr/bin/vnn-cooking_state_recognition-test --video <input-video-file> --done_time <time(minutes)> --overdone_time <time(minutes)>  --result <output-file>
   ```
    - input video file is the path to the mp4 video file on which cooking-state-recognition to be tested. 
    - done_time is the ground truth time(in minutes) for the input video when the done state of food starts.  
