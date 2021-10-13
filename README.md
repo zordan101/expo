@@ -1,15 +1,16 @@
 ## Run test code :-
   - Run the test code with the below command :-
   ```
-  # /usr/bin/vnn-cooking_state_recognition-test --video <path-to-test-video> --done_time <time(min)> --overdone_time <time(min)  --result <path-to-output-file>
+  # /usr/bin/vnn-cooking_state_recognition-test --video <path-to-test-video> --done_time <time(minutes)> --overdone_time <time(minutes)  --result <path-to-output-file>
   ```
    - provide complete path to test video file. 
-   - done_time is the time when done state of food started
-   - overdone_time is the time when overdone state of food started
-   - If the done or overdone state is not achieved then need to pass the complete video duration.
+   - done_time is the time when done state of food started.
+   - overdone_time is the time when overdone state of food started.
+   - If the done or overdone state is not achieved then need to provide the complete video file duration(minutes).
+   - provide complete output/result text file path.
    
        ```
-   - after running the test command, specified output foler will have a text file 'result.txt' which has results in the following format :-
+   - after running the test command, specified output text file will have results in the following format :-
       
       <*Sr No.*> <*test-video-file*> <*current-time(minutes)*> <*ground-truth-food-state*> <*predicted-food-tate*> <inference-time>
        
