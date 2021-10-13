@@ -21,7 +21,7 @@
        ```
   
 ## Note
-  - Three food states [`UnderCooked/UnderDone`], [`Cooked/Done`], [`OverCooked/OverDone`] are considered for targeted food items for cooking-state-recognition 
+  - Three food states `UnderCooked/UnderDone`, `Cooked/Done`, `OverCooked/OverDone` are considered for targeted food items for cooking-state-recognition 
   - For food items targeted for cooking-state-recognition ground truth values can be **0 - underdone, 1 - done, 2 - overdone** . 
   
 ---
