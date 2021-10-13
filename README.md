@@ -10,6 +10,7 @@
    - provide complete output/result text file path.
    
        
+
    - after running the test command, specified output text file will have results in the following format :-
       
       <*Sr No.*> <*test-video-file*> <*current-time(minutes)*> <*ground-truth-food-state*> <*predicted-food-tate*> <inference-time>
