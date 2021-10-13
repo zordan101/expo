@@ -11,7 +11,7 @@
        ```
    - after running the test command, specified output foler will have a text file 'result.txt' which has results in the following format :-
       
-      <*Sr No.*> <*test-video-file*> <*current-time(minutes)*> <*ground-truth-food-state*> <*predicted food state*> <inference-time>
+      <*Sr No.*> <*test-video-file*> <*current-time(minutes)*> <*ground-truth-food-state*> <*predicted-food-tate*> <inference-time>
        
        example :-
        ```
@@ -21,7 +21,7 @@
        ```
   
 ## Note
-  - Three food states "UnderCooked/UnderDone, Cooked/Done, OverCooked/OverDone" are considered for targeted food items for cooking-state-recognition 
+  - Three food states [UnderCooked/UnderDone, Cooked/Done, OverCooked/OverDone] are considered for targeted food items for cooking-state-recognition 
   - For food items targeted for cooking-state-recognition ground truth values can be **0 - underdone, 1 - done, 2 - overdone** . 
   
 ---
