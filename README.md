@@ -21,7 +21,7 @@
         /home/owner/media/cooking_data/SalmonSteak_case#2_20210726.mp4  2       0       0       295
         /home/owner/media/cooking_data/SalmonSteak_case#2_20210726.mp4  3       0       0       267
        
-        /home/owner/media/cooking_data/SalmonSteak_case#2_20210726.mp4 33       1       1        280
+        /home/owner/media/cooking_data/SalmonSteak_case#2_20210726.mp4 27       1       1        280
        ```
   
 ## Note
