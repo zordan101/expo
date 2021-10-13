@@ -4,8 +4,8 @@
   # /usr/bin/vnn-cooking_state_recognition-test --video <input-video-file> --done_time <time(minutes)> --overdone_time <time(minutes)>  --result <output-file>
   ```
    - input video file is the path to the mp4 video file on which cooking-state-recognition to be tested. 
-   - done_time is the ground truth for the input video when the done state of food starts.  
-   - overdone_time is the ground truth for the input video when the overdone state of food starts.
+   - done_time is the ground truth time(in minutes) for the input video when the done state of food starts.  
+   - overdone_time is the ground truth time(in minutes) for the input video when the overdone state of food starts.
    - If the done or overdone state is not achieved then need to provide the complete video file duration(minutes).
    - output file contains the results as predicted by cooking-state-recognition.
    
@@ -21,7 +21,7 @@
         /home/owner/media/cooking_data/SalmonSteak_case#2_20210726.mp4  2       0       0       295
         /home/owner/media/cooking_data/SalmonSteak_case#2_20210726.mp4  3       0       0       267
        
-        /home/owner/media/cooking_data/SalmonSteak_case#2_20210726.mp4 33      1       1        280
+        /home/owner/media/cooking_data/SalmonSteak_case#2_20210726.mp4 33       1       1        280
        ```
   
 ## Note
