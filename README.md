@@ -1,48 +1,27 @@
 ## Run test code :-
   - Run the test code with the below command :-
   ```
-  # /usr/bin/food_size_estimator-test <input-folder-name>
+  # /usr/bin/vnn-cooking_state_recognition-test --video <path-to-test-video> --done_time <time(min)> --overdone_time <time(min)  --result <path-to-output-file>
   ```
-   - input folder has all the images on which food_size_estimator is to be tested
-   - input folder should also have a text file named 'input.txt'
-   - 'input.txt' should have data in the following format :-
+   - provide complete path to test video file. 
+   - done_time is the time when done state of food started
+   - overdone_time is the time when overdone state of food started
+   - If the done or overdone state is not achieved then need to pass the complete video duration.
+   
+       ```
+   - after running the test command, specified output foler will have a text file 'result.txt' which has results in the following format :-
       
-      <*image-name*> <*food-index*> <*ground-truth*>
+      <*Sr No.*> <*test-video-file*> <*current-time(minutes)*> <*ground-truth-food-state*> <*predicted food state*> <inference-time>
        
        example :-
        ```
-       image_210716(102914).jpg 0 7
-       image_210716(102919).jpg 6 11
-       image_210716(102922).jpg 8 2
+       1 /home/owner/media/cooking_data/SalmonSteak_case#2_20210726.mp4  1       0       0       287
+       2 /home/owner/media/cooking_data/SalmonSteak_case#2_20210726.mp4  2       0       0       295
+       3 /home/owner/media/cooking_data/SalmonSteak_case#2_20210726.mp4  3       0       0       267
        ```
-   - after running the test command, input foler will have a text file 'result.txt' which has results in the following format :-
-      
-      <*Sr No.*> <*image-name*> <*time-required*> <*food-item*> <*ground-truth*> <*predicted count or volume*> <***O*** *or* ***X***>
-       
-       example :-
-       ```
-       1 image_210716(102914).jpg 354ms chickenbreast 10 10 O
-       2 image_210716(102919).jpg 356ms salmonsteak 15 14 X
-       3 image_210716(102922).jpg 354ms lasagna 2 2 O
-       ```
-
+  
 ## Note
-  - For food items targeted for food-count ground truth values range from 0 to 16 which is the number of food item present in the image.
-  - For food items targeted for food-volume ground truth values can be **1 - small, 2 - medium, 3 - large** food sizes. Predicted food-volume can also be **0 - unknown** including other three values.
-  - Right or wrong prediction result is displayed using **O for correct prediction** and **X for incorrect prediction**.
-  - Following are the food indices for food items used in the library.
-    | Food item     | Food index |
-    | ------------- |:-------------:|
-    |chickenbreast      | 0     |
-    | chickendrumsticks      | 1     |
-    | salmonfillet      | 2     |
-    |peeledpotatohalves      | 3     |
-    |duckbreast      | 4     |
-    |baguettes      | 5     |
-    |salmonsteak      | 6     |
-    |frozenpizza      | 7     |
-    |lasagna      | 8     |
-    |wholechicken      | 9     |
-    |sconebiscuits      | 10     |
-    |chocochipcookies      | 11    |
+  - Three food states "UnderCooked/UnderDone, Cooked/Done, OverCooked/OverDone" are considered for targeted food items for cooking-state-recognition 
+  - For food items targeted for cooking-state-recognition ground truth values can be **0 - underdone, 1 - done, 2 - overdone** . 
+  
 ---
